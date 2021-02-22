@@ -66,21 +66,14 @@ ScanlinesV2.prototype.getDescription = function () {
     return "Enables Systemspace Scanlines on BetterDiscord";
 };
 ScanlinesV2.prototype.getVersion = function () {
-    return "0.5.1";
+    return "0.5";
 };
 ScanlinesV2.prototype.getAuthor = function () {
     return "Kneesox";
 };
-
-//ScanlinesV2.prototype.getSettingsPanel = function () {};
-
 ScanlinesV2.prototype.load = function () {
-
   BdApi.injectCSS(this.getShortName(), style);
 }
-ScanlinesV2.prototype.unload = function () {
-
-};
 ScanlinesV2.prototype.start = function () {
   const divs = $(`<div id="overlay"></div><div id="overlay2"></div>`);
   $("body").append(divs);
@@ -91,5 +84,3 @@ ScanlinesV2.prototype.stop = function () {
   overlay1.parentNode.removeChild(overlay1);
   overlay2.parentNode.removeChild(overlay2);
 };
-//ScanlinesV2.prototype.onMessage = function () {};
-//ScanlinesV2.prototype.onSwitch = function () {};
