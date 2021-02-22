@@ -1,5 +1,11 @@
-//META{"name":"ScanlinesV2"}*//
-
+/**
+ * @name ScanlinesV2
+ * @authorId 497555706073841671
+ * @donate https://www.paypal.me/knees0x
+ * @website https://github.com/ShiroBlank/Soxcord/blob/main/ScanlinesV2.plugin.js
+ * @source https://raw.githubusercontent.com/ShiroBlank/Soxcord/main/ScanlinesV2.plugin.js
+ * @updateUrl https://raw.githubusercontent.com/ShiroBlank/Soxcord/main/ScanlinesV2.plugin.js
+ */
 function ScanlinesV2() {
     this.initiated = false;
     this.oSettings = {};
@@ -60,7 +66,7 @@ ScanlinesV2.prototype.getDescription = function () {
     return "Enables Systemspace Scanlines on BetterDiscord";
 };
 ScanlinesV2.prototype.getVersion = function () {
-    return "0.5";
+    return "0.5.1";
 };
 ScanlinesV2.prototype.getAuthor = function () {
     return "Kneesox";
@@ -69,8 +75,8 @@ ScanlinesV2.prototype.getAuthor = function () {
 //ScanlinesV2.prototype.getSettingsPanel = function () {};
 
 ScanlinesV2.prototype.load = function () {
-    //PluginUtilities.checkForUpdate(this.getName(), this.getVersion(), "");
-    BdApi.injectCSS(this.getShortName(), style);
+
+  BdApi.injectCSS(this.getShortName(), style);
 }
 ScanlinesV2.prototype.unload = function () {
 
