@@ -57,16 +57,16 @@ var style = `/* Scanlines */
 }`
 
 ScanlinesV2.prototype.getName = function () {
-    return "Systemspace Scanlines";
+    return "Scanlines";
 };
 ScanlinesV2.prototype.getShortName = function () {
     return "SlV2";
 };
 ScanlinesV2.prototype.getDescription = function () {
-    return "Enables Systemspace Scanlines on BetterDiscord";
+    return "Enables Scanlines on BetterDiscord";
 };
 ScanlinesV2.prototype.getVersion = function () {
-    return "0.5";
+    return "0.5.1";
 };
 ScanlinesV2.prototype.getAuthor = function () {
     return "Kneesox";
